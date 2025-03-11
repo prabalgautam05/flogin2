@@ -1,0 +1,7 @@
+# filepath: c:\Users\Naman\Documents\GitHub\flogin2\.gitignore
+# Ignore the env directory
+env/
+.env
+__pycache__/
+*.pyc
+db.sqlite3
