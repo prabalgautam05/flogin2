@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Face Recognition</title>
+    <title>Login - FaceGate</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,7 +23,7 @@
         }
         .login-container {
             width: 50%;
-            padding: 20px;
+            height: 80%;
             background-color: black;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
@@ -42,6 +42,10 @@
             object-fit: cover;
         }
         h2 {
+            color: #007bff;
+            font-size: 30px;
+        }
+        h3 {
             color: white;
             margin-bottom: 20px;
         }
@@ -58,8 +62,8 @@
         }
         video {
             width: 80%;
-            height: 250px;
-            margin: 10px auto;
+            height: 200px;
+            margin: 5px auto;
         }
         canvas {
             display: none;
@@ -96,7 +100,8 @@
 <body>
     <div class="container">
         <div class="login-container">
-            <h2>Login - Face Recognition</h2>
+            <h2>FaceGate</h2>
+            <h3>Login - Face Recognition</h3>
             <form id="login-form" method="post" action="/login/">
                 {% csrf_token %}
                 <input type="text" name="username" id="username" placeholder="Username" required>
