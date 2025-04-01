@@ -21,6 +21,7 @@ from django.urls import path
 from accounts.views import register, login_user, welcome
 
 urlpatterns = [
+    path('', register),
     path('register/', register),
     path('login/', login_user),
     path('welcome/', welcome),
