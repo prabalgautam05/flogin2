@@ -5,4 +5,5 @@ env/
 __pycache__/
 *.pyc
 db.sqlite3
-.vercel
+venv
+user_faces
